@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/STP-10198/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Tile Fashion</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,35 +12,90 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/STP-10198/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-10198/assets/styles-DLBSb1uC.css">
+    <link rel="stylesheet" crossorigin href="/STP-10198/assets/styles-DPQhOHpm.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <image src="../img/nav_logo.png" alt="logo"></image>
-          <span class="logo-txt">Tile<br> Fashion</span>
-        </a>
-        <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">
-          <image src="../img/burger-menu.svg" alt="burger menu" width="24" height="24"></image>
-        </button>
+    <nav class="nav">
+      <a class="nav-logo" href="./index.html" aria-label="Site logo">
+        <picture>
+          <source
+            srcset="../img/game_logo.png 1x, ../img/game_logo@2x.png 2x"
+          />
+          <img src="../img/game_logo.png" alt="logo" height="24" width="24" />
+        </picture>
+        <p class="logo-txt">
+          Tile<br />
+          Fashion
+        </p>
+      </a>
+      <div class="header__burger-wrapper">
         <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
+          <ul class="burger-nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">How to play</a></li>
+            <li><a href="#">Game Features</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Outfits</a></li>
+            <li><a href="#">Boosters</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
           <button type="button" class="btn-close" data-action="close">
-            close
+            <svg class="close-icon" width="24" height="24">
+              <use href="../img/sprite.svg#icon-cross"></use>
+            </svg>
           </button>
         </div>
-      </nav>
+        <button type="button" class="burger-btn" data-action="open">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="../img/sprite.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
   </div>
 </header>
 
+    <section class="hero">
+  <div class="container">
+    <div class="hero-wrap">
+      <h1 class="hero-title">
+        <span class="hero-title-margin">Match.</span
+        ><span class="hero-title-margin">Style.</span> Fall in Love.
+      </h1>
+      <div>
+        <div>
+          <p class="hero-txt">
+            Discover a relaxing tile-matching game where fashion meets romance
+            in every level.
+          </p>
+          <a
+            class="googleplay-link"
+            href="https://play.google.com/store/apps/details?id=com.tile.fashion.makeover.story&hl=en&gl=us"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Play Now<br />
+            Begin your story</a
+          >
+        </div>
+        <div class="hero-logo-wrap">
+          <picture>
+            <source
+              srcset="../img/game_logo.png 1x, ../img/game_logo@2x.png 2x"
+            />
+            <img src="../img/game_logo.png" alt="logo" height="74" width="74" />
+          </picture>
+          <h3 class="hero-subtitle">
+            Tile Fashhion:<br /><span>Love Story</span>
+          </h3>
+        </div>
+      </div>
+      <hr class="section-divider" />
+    </div>
+  </div>
+</section>
 
     <main></main>
 
