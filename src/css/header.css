@@ -9,6 +9,7 @@
   margin-right: auto;
   width: 100%;
 }
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -21,6 +22,7 @@
   font-weight: 700;
   font-size: 8px;
   color: #2c2c2c;
+  line-height: 1.15;
 }
 
 .header__burger-wrapper {
