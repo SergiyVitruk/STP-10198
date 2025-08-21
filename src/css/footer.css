@@ -1,15 +1,19 @@
 .footer {
   background-color: #fadadd;
   width: 100%;
+  padding: 8px 32px;
+  box-sizing: border-box;
 }
 
 .footer-container {
   max-width: 320px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 29px;
-  margin-left: 32px;
+  margin: 0 auto;
   margin-bottom: 8px;
+  box-sizing: border-box;
 }
 
 .footer-grid-item {
@@ -47,7 +51,7 @@
   justify-content: center;
   flex-direction: row;
   column-gap: 32px;
-  padding: 18.5px;
+  padding: 0 18.5px;
 }
 
 .footer-text {
@@ -59,9 +63,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    padding: 0;
+  }
   .footer-container {
     max-width: 1200px;
-    margin: 0 auto;
+    /* grid-template-columns: 1fr 1fr; */
   }
 
   .footer-grid-item {
