@@ -1,12 +1,17 @@
 .header {
   padding: 4px 0;
   background-color: #fdecef;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  margin-right: auto;
+  align-items: center;
   width: 100%;
 }
 
@@ -17,8 +22,13 @@
   gap: 4px;
 }
 
+.nav-logo img {
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 .logo-txt {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 8px;
   color: #2c2c2c;
@@ -28,6 +38,7 @@
 .header__burger-wrapper {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .burger-btn,
@@ -35,27 +46,65 @@
   background-color: transparent;
   border: none;
   padding: 0;
-}
-
-.burger-menu {
-  background-color: lightgreen;
-  display: flex;
-  justify-content: space-between;
-  width: 150px;
-  padding: 8px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  z-index: 1000;
+  display: block;
 }
 
 .btn-close {
-  align-self: baseline;
+  z-index: 1100;
+}
+
+.burger-menu {
+  background-color: #fdecef;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  border-top-right-radius: 0;
+  display: flex;
+  flex-direction: column;
+  width: 192px;
+  position: fixed;
+  padding: 32px 10px 14px 10px;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1100;
+  transform: translateX(100%);
+}
+
+.burger-nav-list {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+}
+
+.close-icon {
+  stroke: black;
 }
 
 [data-visible='open'] {
-  display: flex;
+  transform: translateX(0);
 }
 
 [data-visible='close'] {
-  display: none;
+  transform: translateX(100%);
+}
+
+.burger-menu[data-visible='open'] ~ .burger-btn {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+body:has(.burger-menu[data-visible='open']) {
+  background-color: rgba(0, 0, 0, 0.2);
 }
