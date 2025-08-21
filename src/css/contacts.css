@@ -1,0 +1,96 @@
+.section-divider {
+  display: block;
+  border: none;
+  height: 1px;
+  background-color: #706666;
+  width: 264px;
+}
+
+.contact {
+  margin: 40px 0;
+}
+
+.contacts-wrapper {
+  max-width: 320px;
+}
+
+.contact-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  text-align: center;
+  color: #e38ca9;
+  margin-bottom: 16px;
+}
+
+.contact-subtitle {
+  font-family: 'Crimson Pro', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.50002;
+  color: #e38ca9;
+  margin-bottom: 14px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.contact-label {
+  font-family: 'Crimson Pro', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #2c2c2c;
+  margin-right: 2px;
+}
+
+.contact-link {
+  font-family: 'Crimson Pro', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #2c2c2c;
+}
+
+.contact-text {
+  font-family: 'Crimson Pro', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #2c2c2c;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-divider {
+    width: 996px;
+  }
+
+  .contact {
+    margin: 60px 0 32px;
+  }
+
+  .contacts-wrapper {
+    max-width: 1200px;
+  }
+
+  .contact-title {
+    font-size: 40px;
+  }
+
+  .contact-subtitle {
+    font-size: 24px;
+  }
+
+  .contact-label {
+    font-size: 16px;
+  }
+  .contact-link {
+    font-size: 16px;
+  }
+  .contact-text {
+    font-size: 16px;
+  }
+}
