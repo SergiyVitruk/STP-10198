@@ -4,6 +4,7 @@
   font-size: 16px;
   color: #e38ca9;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .gallery-list {
@@ -30,4 +31,5 @@
   line-height: 1.50002;
   color: #2c2c2c;
   width: 80%;
+  text-align: center;
 }

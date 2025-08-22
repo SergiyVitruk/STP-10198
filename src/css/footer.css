@@ -1,19 +1,14 @@
 .footer {
   background-color: #fadadd;
   width: 100%;
-  padding: 8px 32px;
-  box-sizing: border-box;
 }
 
 .footer-container {
-  max-width: 320px;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 29px;
   margin: 0 auto;
   margin-bottom: 8px;
-  box-sizing: border-box;
 }
 
 .footer-grid-item {
