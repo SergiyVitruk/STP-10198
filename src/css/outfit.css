@@ -1,0 +1,41 @@
+.outfit-title {
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 16px;
+  color: #e38ca9;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.outfit-subtitle {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e38ca9;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.outfit-content-wrap {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.outfit-content-wrap p {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+.outfit-content-wrap p > span {
+  color: #e38ca9;
+}
+
+.outfit-img {
+  min-width: 149px;
+}
+
