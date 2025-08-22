@@ -1,0 +1,45 @@
+.boosters-title {
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 16px;
+  color: #e38ca9;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.boosters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.boosters-item {
+  border-radius: 12px;
+  padding: 6px 24px 22px;
+  background-color: #fff5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  max-width: 262px;
+  margin: 0 auto;
+}
+
+.booster-icon {
+  fill: #e38ca9;
+}
+
+.booster-icon-idea {
+  fill: transparent;
+  stroke: #e38ca9;
+}
+
+.boosters-item p {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2c2c2c;
+}
