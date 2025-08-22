@@ -4,10 +4,12 @@
   height: 1px;
   background-color: #706666;
   width: 264px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contact {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .contacts-wrapper {
