@@ -37,6 +37,13 @@
   align-items: center;
 }
 
+.footer-link:hover,
+.footer-link:focus,
+.footer-social-link:hover,
+.footer-social-link:focus {
+  transform: scale(1.05);
+}
+
 .footer-logo-icon {
   fill: #a87c8e;
 }
