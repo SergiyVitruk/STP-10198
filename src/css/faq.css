@@ -24,7 +24,6 @@
 }
 .accordion-header {
   padding: 2px 4px;
-  height: 27px;
   font-family: 'Crimson Pro', sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -44,6 +43,7 @@
   line-height: 1.5;
   color: #2c2c2c;
   background-color: #fff5e5;
+  padding: 2px 4px;
 }
 .accordion-item.active .accordion-content {
   max-height: 100px;
@@ -51,11 +51,14 @@
   margin-bottom: 0;
 }
 
+.accordion-content p {
+  padding: 2px 4px;
+}
+
 .accordion-icon {
   transition: transform 0.3s ease;
   fill: black;
-  width: 18px;
-  height: 9px;
+  text-align: center;
 }
 .accordion-icon.rotate {
   transform: rotate(180deg);
@@ -98,19 +101,18 @@
   .accordion-content {
     font-size: 24px;
   }
+
   .accordion-btn {
     max-width: 1200px;
-    height: 56px;
     align-items: center;
   }
 
   .accordion-icon {
-    width: 72px;
+    width: 36px;
     height: 36px;
   }
 
   .accordion-item.active .accordion-content {
     max-height: 200px;
-    padding: 10px;
   }
 }

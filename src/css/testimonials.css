@@ -1,0 +1,119 @@
+.testimonials-container {
+  width: 100%;
+  padding: 0;
+}
+.testimonials-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  color: #e38ca9;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.swiper-wrapper {
+  display: flex;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 180px !important;
+}
+.testimonials-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.testimonials-card {
+  background-color: #fadadd;
+  border: 0.5px solid #a79b9b;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 165px;
+}
+.testimonials-text {
+  font-family: 'Crimson Pro', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  color: #2c2c2c;
+  margin: 0 16px 24px 16px;
+  line-height: 1;
+}
+.testimonials-user-text {
+  font-family: 'Crimson Pro', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  color: #2c2c2c;
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.testimonials-avatar {
+  margin-top: 8px;
+}
+.testimonials-logo-icon {
+  margin-bottom: 8px;
+}
+
+.section-divider {
+  display: block;
+  border: none;
+  height: 1px;
+  background-color: #706666;
+  width: 264px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonials-container {
+    box-sizing: border-box;
+    padding: 0 32px;
+  }
+  .testimonials-title {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+
+  .swiper-slide {
+    width: calc((100% - 64px) / 3) !important;
+  }
+
+  .swiper-wrapper {
+    overflow: visible;
+  }
+
+  .testimonials-avatar {
+    margin-top: 16px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonials-logo-icon {
+    width: 168px;
+    height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .testimonials-card {
+    border: 1px solid #a79b9b;
+    height: 330px;
+    min-width: 360px;
+  }
+
+  .testimonials-user {
+    gap: 16px;
+  }
+
+  .testimonials-text {
+    font-size: 20px;
+    margin: 0 16px 32px 16px;
+  }
+
+  .testimonials-user-text {
+    font-size: 20px;
+  }
+}
