@@ -36,3 +36,9 @@ main:has(.back-link) {
 section {
   scroll-margin-top: 50px;
 }
+
+@media screen and (min-width: 1200px) {
+  section {
+    scroll-margin-top: 110px;
+  }
+}
