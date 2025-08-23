@@ -1,0 +1,211 @@
+.privacy-wrap {
+  padding-top: 43px;
+  margin-bottom: 8px;
+}
+
+.back-index {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.back-icon {
+  fill: black;
+}
+
+.back-index p {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.privacy-title {
+  font-family: var(--font-primary);
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.privacy-subtitle {
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.privacy-subtitle-txt {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.privacy-list {
+  list-style: none;
+  counter-reset: section;
+  padding-left: 0;
+}
+
+.privacy-list > li {
+  counter-increment: section;
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy-item-title-wrap {
+  display: flex;
+  align-items: first baseline;
+  gap: 0;
+}
+
+.privacy-item-title-wrap::before {
+  content: counter(section) '.';
+  font-weight: 900;
+  font-size: 16px;
+  color: #000;
+  font-family: var(--font-secondary);
+  display: inline-block;
+  min-width: 15px;
+  text-align: right;
+  margin-right: 1px;
+  flex-shrink: 0;
+}
+
+.privacy-list h4 {
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #000;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.privacy-list p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.marker-lists {
+  list-style-type: disc;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+  padding-left: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    display: none;
+  }
+
+  .privacy-wrap {
+    padding-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  .back-index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .back-icon {
+    width: 36px;
+    height: 72px;
+  }
+
+  .back-index p {
+    font-size: 24px;
+  }
+
+  .privacy-title {
+    font-family: var(--font-secondary);
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+
+  .privacy-subtitle {
+    font-size: 16px;
+    line-height: 1.50002;
+    margin-bottom: 0;
+  }
+
+  .privacy-subtitle-txt {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .privacy-list {
+    margin-top: 0;
+    list-style: none;
+    counter-reset: section;
+    padding-left: 0;
+  }
+
+  .privacy-list > li {
+    counter-increment: section;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+  }
+
+  .privacy-item-title-wrap {
+    display: flex;
+    align-items: first baseline;
+    gap: 2px;
+  }
+
+  .privacy-item-title-wrap::before {
+    content: counter(section) '.';
+    font-weight: 900;
+    font-size: 24px;
+    color: #000;
+    font-family: var(--font-primary);
+    display: inline-block;
+    min-width: 24px;
+    text-align: right;
+    margin-right: 2px;
+    flex-shrink: 0;
+  }
+
+  .privacy-list h4 {
+    font-family: var(--font-primary);
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.8;
+    color: #000;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .privacy-list p {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .marker-lists {
+    list-style-type: disc;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    padding-left: 12px;
+  }
+}
