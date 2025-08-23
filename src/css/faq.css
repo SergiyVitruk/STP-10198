@@ -46,6 +46,9 @@
   line-height: 1.5;
   color: #2c2c2c;
   background-color: #fff5e5;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
   padding: 2px 4px;
 }
 .accordion-item.active .accordion-content {
@@ -77,6 +80,8 @@
   background-color: #fff5e5;
   border: none;
   border-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .accordion-btn:last-child {
