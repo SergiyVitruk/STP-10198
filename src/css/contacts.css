@@ -57,6 +57,10 @@
   color: #2c2c2c;
 }
 
+.contact-link:hover {
+  text-decoration: underline;
+}
+
 .contact-text {
   font-family: 'Crimson Pro', sans-serif;
   font-weight: 400;
