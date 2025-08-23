@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-top: 8px;
   padding-top: 32px;
+  position: relative;
 }
 
 .hero-title {
@@ -50,6 +51,15 @@
   color: #2c2c2c;
 }
 
+.googleplay-link:hover,
+.googleplay-link:focus {
+  background-color: #ffe4e7;
+}
+
+.googleplay-link:active {
+  background-color: #efd3d5;
+}
+
 .hero-logo-wrap {
   width: 100%;
   max-width: 75px;
@@ -73,4 +83,88 @@
   font-family: var(--font-primary);
   font-weight: 500;
   line-height: 1.5;
+}
+
+.divider {
+  display: block;
+  border: none;
+  height: 1px;
+  background-color: #706666;
+  width: 264px;
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-wrap {
+    margin-top: 32px;
+    padding-top: 92px;
+  }
+
+  .hero-title {
+    max-width: 748px;
+    font-family: var(--font-secondary);
+    font-size: 48px;
+    margin-bottom: 28px;
+  }
+
+  .hero-title-margin {
+    margin-right: 48px;
+  }
+
+  .hero-wrap > div {
+    gap: 148px;
+  }
+
+  .hero-txt {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 34px;
+    max-width: 345px;
+  }
+
+  .googleplay-link {
+    border-radius: 8px;
+    padding: 24px 32px;
+    width: 237px;
+    height: 104px;
+    font-size: 20px;
+  }
+
+  .hero-logo-wrap {
+    max-width: 240px;
+    position: absolute;
+    top: 92px;
+    right: 0px;
+    margin-bottom: 8px;
+  }
+
+  .hero-logo-wrap img {
+    border-radius: 48px;
+    width: 240px;
+    height: 240px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .hero-subtitle {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+
+  .hero-subtitle > span {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .divider {
+    display: block;
+    border: none;
+    height: 1px;
+    background-color: #706666;
+    width: 996px;
+    margin: 60px auto;
+  }
 }

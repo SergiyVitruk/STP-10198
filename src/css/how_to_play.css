@@ -59,16 +59,16 @@
   margin-left: 0%;
 }
 .step:nth-child(2) {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 .step:nth-child(3) {
-  margin-left: 30%;
+  margin-left: 20%;
 }
 .step:nth-child(4) {
-  margin-left: 45%;
+  margin-left: 30%;
 }
 .step:nth-child(5) {
-  margin-left: 60%;
+  margin-left: 40%;
 }
 
 .section-divider {
@@ -78,4 +78,66 @@
   background-color: #706666;
   width: 264px;
   margin: 20px auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .how-to-play__title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .how-to-play__subtitle {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    counter-reset: step-counter;
+  }
+
+  .step {
+    border: 2px solid #e38ca9;
+    border-radius: 8px;
+    max-width: 266px;
+    padding: 24px 16px 24px 34px;
+    position: relative;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3),
+      0 8px 12px 6px rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+    counter-increment: step-counter;
+  }
+
+  .step::before {
+    content: counter(step-counter) '.';
+    position: absolute;
+    left: 14px;
+    top: 24px;
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    font-weight: 400;
+    color: #2c2c2c;
+  }
+
+  .step:nth-child(1) {
+    margin-left: 5%;
+  }
+  .step:nth-child(2) {
+    margin-left: 20%;
+  }
+  .step:nth-child(3) {
+    margin-left: 35%;
+  }
+  .step:nth-child(4) {
+    margin-left: 50%;
+  }
+  .step:nth-child(5) {
+    margin-left: 65%;
+  }
 }
