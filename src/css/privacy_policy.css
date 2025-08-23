@@ -11,6 +11,11 @@
   margin-bottom: 8px;
 }
 
+.back-index p:hover,
+.back-index p:focus {
+  font-weight: 900;
+}
+
 .back-icon {
   fill: black;
 }

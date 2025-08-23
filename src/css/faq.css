@@ -30,9 +30,12 @@
   line-height: 1.5;
   color: #2c2c2c;
 }
-.accordion-header:hover {
-  background-color: #eee;
+
+.accordion-btn:hover,
+.accordion-btn:focus {
+  background-color: #ffe3b7;
 }
+
 .accordion-content {
   max-height: 0;
   overflow: hidden;

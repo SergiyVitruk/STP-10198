@@ -86,3 +86,23 @@
     width: 100%;
   }
 }
+
+.fade-left,
+.fade-right,
+.fade-up {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease-out;
+}
+
+.fade-left {
+  transform: translateX(-50px);
+}
+.fade-up {
+  transform: translateY(50px);
+}
+
+.animate {
+  opacity: 1;
+  transform: translate(0, 0);
+}

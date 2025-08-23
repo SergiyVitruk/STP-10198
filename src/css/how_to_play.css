@@ -57,18 +57,23 @@
 
 .step:nth-child(1) {
   margin-left: 0%;
+  transition-delay: 0.1s;
 }
 .step:nth-child(2) {
   margin-left: 10%;
+  transition-delay: 0.3s;
 }
 .step:nth-child(3) {
   margin-left: 20%;
+  transition-delay: 0.5s;
 }
 .step:nth-child(4) {
   margin-left: 30%;
+  transition-delay: 0.7s;
 }
 .step:nth-child(5) {
   margin-left: 40%;
+  transition-delay: 0.9s;
 }
 
 .section-divider {
