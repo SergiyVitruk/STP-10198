@@ -81,6 +81,15 @@
   gap: 8px;
 }
 
+.burger-nav-list li:hover,
+.burger-nav-list li:focus {
+  background-color: #fadadd;
+}
+
+.burger-nav-list a {
+  display: block;
+}
+
 .btn-close {
   position: absolute;
   top: 6px;
