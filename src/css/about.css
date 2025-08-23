@@ -47,3 +47,42 @@
   width: 100%;
   min-width: 102px;
 }
+
+@media screen and (min-width: 1200px) {
+  .about-section-title {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .about-subtitle {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .section-content-wrap {
+    justify-content: center;
+    gap: 79px;
+    padding-bottom: 44px;
+    align-items: start;
+  }
+
+  .section-content-wrap > div {
+    flex-direction: row;
+    gap: 8px;
+    max-width: 652px;
+  }
+
+  .section-content-wrap p {
+    font-size: 16px;
+    width: 212px;
+  }
+
+  .about-img-wrap {
+    width: 407px;
+  }
+
+  .about-img-wrap img {
+    width: 100%;
+  }
+}
