@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.cookies-title {
+.cookies-title-modal {
   font-family: var(--font-primary);
   font-weight: 700;
   font-size: 40px;
@@ -77,7 +77,7 @@
     align-items: center;
   }
 
-  .cookies-title {
+  .cookies-title-modal {
     font-size: 40px;
     margin-bottom: 40px;
   }
