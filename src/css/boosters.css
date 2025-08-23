@@ -22,8 +22,9 @@
   justify-content: center;
   align-items: center;
   gap: 6px;
-  max-width: 262px;
+  width: 262px;
   margin: 0 auto;
+  min-height: 147px;
 }
 
 .booster-icon {

@@ -20,7 +20,7 @@ function equalizeCardHeights() {
 function duplicateSlidesForLoop() {
   const container = document.querySelector('.swiper-wrapper');
   const slides = container.querySelectorAll('.swiper-slide');
-  const slidesPerView = window.innerWidth < 1200 ? 1.7 : 3;
+  const slidesPerView = window.innerWidth < 1200 ? 1.73 : 3;
   const minSlides = Math.ceil(slidesPerView) + 1;
 
   if (slides.length < minSlides) {
@@ -45,7 +45,7 @@ function initTestimonialsSwiper() {
     centeredSlides: true,
     spaceBetween: 32,
     breakpoints: {
-      320: { slidesPerView: 1.7, spaceBetween: 12 },
+      320: { slidesPerView: 1.73, spaceBetween: 12 },
       1200: { slidesPerView: 3, spaceBetween: 32 },
     },
   });
