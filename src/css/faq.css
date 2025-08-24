@@ -46,13 +46,18 @@
   line-height: 1.5;
   color: #2c2c2c;
   background-color: #fff5e5;
-  border-radius: 4px;
-  padding: 2px 4px;
+  border-radius: 0 0 4px 4px;
+  padding: 0 4px;
 }
 .accordion-item.active .accordion-content {
   max-height: 300px;
-  padding: 2px 4px;
-  margin-bottom: 0;
+  padding: 0px 4px;
+  margin-bottom: 2px;
+  border-radius: 4px 4px 0 0;
+}
+
+.accordion-item.active .accordion-btn {
+  border-radius: 4px 4px 0 0;
 }
 
 .accordion-content p {
