@@ -53,9 +53,10 @@ function initTestimonialsSwiper() {
   swiper.slides.forEach((slideEl, index) => {
     slideEl.addEventListener('click', () => {
       if (loopEnabled) {
-        swiper.slideToLoop(index);
+        const realIndex = slideEl.getAttribute('data-swiper-slide-index');
+        swiper.slideToLoop(realIndex, 600);
       } else {
-        swiper.slideTo(index);
+        swiper.slideTo(index, 600);
       }
     });
   });
