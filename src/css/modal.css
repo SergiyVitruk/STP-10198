@@ -53,17 +53,17 @@
   color: #000;
 }
 
-#accept-cookies {
+#js-accept-cookies {
   background: #fff;
   border: none;
 }
 
-#reject-cookies {
+#js-reject-cookies {
   background: transparent;
   border: 4px solid #fff;
 }
 
-.hidden {
+.js-hidden {
   display: none;
 }
 
