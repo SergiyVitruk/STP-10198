@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-.accordion-item {
+.js-accordion-item {
   width: 100%;
   max-width: 320px;
   margin-bottom: 12px;
@@ -31,8 +31,8 @@
   color: #2c2c2c;
 }
 
-.accordion-btn:hover,
-.accordion-btn:focus {
+.js-accordion-btn:hover,
+.js-accordion-btn:focus {
   background-color: #ffe3b7;
 }
 
@@ -48,7 +48,7 @@
   background-color: #fff5e5;
   padding: 2px 4px;
 }
-.accordion-item.active .accordion-content {
+.js-accordion-item.js-active .accordion-content {
   max-height: 100px;
   padding: 2px 4px;
   margin-bottom: 0;
@@ -58,16 +58,16 @@
   padding: 2px 4px;
 }
 
-.accordion-icon {
+.js-accordion-icon {
   transition: transform 0.3s ease;
   fill: black;
   text-align: center;
 }
-.accordion-icon.rotate {
+.js-accordion-icon.js-rotate {
   transform: rotate(180deg);
 }
 
-.accordion-btn {
+.js-accordion-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +79,7 @@
   border-radius: 4px;
 }
 
-.accordion-btn:last-child {
+.js-accordion-btn:last-child {
   padding-bottom: 20px;
 }
 
@@ -95,7 +95,7 @@
   .accordion {
     max-width: 1200px;
   }
-  .accordion-item {
+  .js-accordion-item {
     max-width: 1200px;
   }
   .accordion-header {
@@ -105,17 +105,17 @@
     font-size: 24px;
   }
 
-  .accordion-btn {
+  .js-accordion-btn {
     max-width: 1200px;
     align-items: center;
   }
 
-  .accordion-icon {
+  .js-accordion-icon {
     width: 36px;
     height: 36px;
   }
 
-  .accordion-item.active .accordion-content {
+  .js-accordion-item.js-active .accordion-content {
     max-height: 200px;
   }
 }

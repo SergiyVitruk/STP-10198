@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
+          entry.target.classList.add('js-animate');
           observer.unobserve(entry.target);
         }
       });
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { threshold: 0.2 }
   );
 
-  document.querySelectorAll('.fade-left, .fade-right, .fade-up').forEach(el => {
+  document.querySelectorAll('.js-fade-right, .js-fade-up').forEach(el => {
     observer.observe(el);
   });
 });

@@ -1,9 +1,9 @@
-document.querySelectorAll('.accordion-btn').forEach(button => {
+document.querySelectorAll('.js-accordion-btn').forEach(button => {
   button.addEventListener('click', () => {
-    const icon = button.querySelector('.accordion-icon');
-    icon.classList.toggle('rotate');
+    const icon = button.querySelector('.js-accordion-icon');
+    icon.classList.toggle('js-rotate');
 
-    const item = button.closest('.accordion-item');
-    item.classList.toggle('active');
+    const item = button.closest('.js-accordion-item');
+    item.classList.toggle('js-active');
   });
 });
