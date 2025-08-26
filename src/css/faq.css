@@ -49,6 +49,7 @@
   border-radius: 0 0 4px 4px;
   padding: 0 4px;
 }
+
 .js-accordion-item.active .accordion-content {
   max-height: 300px;
   padding: 0px 4px;
@@ -69,6 +70,7 @@
   fill: black;
   text-align: center;
 }
+
 .js-accordion-icon.rotate {
   transform: rotate(180deg);
 }
@@ -120,7 +122,7 @@
     width: 36px;
     height: 36px;
   }
-
+  
   .js-accordion-item.active .accordion-content {
     max-height: 200px;
     border-radius: 0 0 4px 4px;

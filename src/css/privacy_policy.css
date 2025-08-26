@@ -108,7 +108,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.8;
-  padding-left: 12px;
+  padding-left: 18px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -182,10 +182,9 @@
     color: #000;
     font-family: var(--font-primary);
     display: inline-block;
-    min-width: 24px;
+    min-width: 18px;
     text-align: right;
     margin-right: 2px;
-    flex-shrink: 0;
   }
 
   .privacy-list h4 {
@@ -195,7 +194,6 @@
     line-height: 1.8;
     color: #000;
     margin: 0;
-    flex-grow: 1;
   }
 
   .privacy-list p {
@@ -211,6 +209,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
-    padding-left: 12px;
+    padding-left: 20px;
   }
 }
