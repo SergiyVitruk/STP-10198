@@ -10,10 +10,10 @@
   text-align: center;
   margin-bottom: 20px;
 }
-.swiper-wrapper {
+.swiper-wrapper.js-swiper-wrapper {
   display: flex;
 }
-.swiper-slide {
+.swiper-slide.js-swiper-slide {
   flex-shrink: 0;
   width: 180px !important;
 }
@@ -30,6 +30,8 @@
   flex-direction: column;
   position: relative;
   height: 165px;
+  flex-shrink: 0;
+  width: 180px !important;
 }
 .testimonials-text {
   font-family: 'Crimson Pro', sans-serif;
@@ -78,11 +80,11 @@
     margin-bottom: 60px;
   }
 
-  .swiper-slide {
+  .swiper-slide.js-swiper-slide {
     width: calc((100% - 64px) / 3) !important;
   }
 
-  .swiper-wrapper {
+  .swiper-wrapper.js-swiper-wrapper {
     overflow: visible;
   }
 

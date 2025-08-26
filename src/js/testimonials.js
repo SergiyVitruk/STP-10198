@@ -3,7 +3,7 @@ import 'swiper/css';
 
 function equalizeCardHeights() {
   const cards = document.querySelectorAll(
-    '.swiper-slide.testimonials-card:not(.swiper-slide-duplicate)'
+    '.swiper-slide.js-swiper-slide.testimonials-card:not(.swiper-slide-duplicate)'
   );
   if (!cards.length) return;
 
@@ -18,8 +18,8 @@ function equalizeCardHeights() {
 }
 
 function duplicateSlidesForLoop() {
-  const container = document.querySelector('.swiper-wrapper');
-  const slides = container.querySelectorAll('.swiper-slide');
+  const container = document.querySelector('.swiper-wrapper.js-swiper-wrapper');
+  const slides = container.querySelectorAll('.swiper-slide.js-swiper-slide');
   const slidesPerView = window.innerWidth < 1200 ? 1.73 : 3;
   const minSlides = Math.ceil(slidesPerView) + 1;
 
@@ -36,10 +36,12 @@ function initTestimonialsSwiper() {
   equalizeCardHeights();
   duplicateSlidesForLoop();
 
-  const slides = document.querySelectorAll('.swiper-slide.testimonials-card');
+  const slides = document.querySelectorAll(
+    '.swiper-slide.js-swiper-slide.testimonials-card'
+  );
   const loopEnabled = slides.length > 1;
 
-  const swiper = new Swiper('.swiper-testimonials', {
+  const swiper = new Swiper('.swiper.js-swiper-testimonials', {
     loop: loopEnabled,
     grabCursor: true,
     centeredSlides: true,

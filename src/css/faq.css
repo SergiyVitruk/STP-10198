@@ -50,14 +50,14 @@
   padding: 0 4px;
 }
 
-.js-accordion-item.js-active .accordion-content {
+.js-accordion-item.active .accordion-content {
   max-height: 300px;
   padding: 0px 4px;
   margin-bottom: 2px;
   border-radius: 0 0 4px 4px;
 }
 
-.js-accordion-item.js-active .js-accordion-btn {
+.js-accordion-item.active .accordion-btn {
   border-radius: 4px 4px 0 0;
 }
 
@@ -70,7 +70,8 @@
   fill: black;
   text-align: center;
 }
-.js-accordion-icon.js-rotate {
+
+.js-accordion-icon.rotate {
   transform: rotate(180deg);
 }
 
@@ -121,8 +122,8 @@
     width: 36px;
     height: 36px;
   }
-
-  .js-accordion-item.js-active .accordion-content {
+  
+  .js-accordion-item.active .accordion-content {
     max-height: 200px;
     border-radius: 0 0 4px 4px;
   }
